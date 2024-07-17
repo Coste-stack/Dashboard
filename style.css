@@ -9,7 +9,7 @@
 
 .container {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto 4fr;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
 }
@@ -56,7 +56,6 @@
 
     width: 20rem;
     height: 2rem;
-    margin: 5%;
     margin-left: 0;
 }
 
@@ -70,7 +69,7 @@
 .upper .left { flex-grow: 2; }
 .upper .right { flex-grow: 1; }
 
-.bottom .left,
+.bottom .left { flex-grow: 1.5; }
 .bottom .right { flex-grow: 1; }
 
 .upper .left,
@@ -86,7 +85,8 @@
 .upper .right .profile,
 .bottom .left .profile {
     height: 50px; width: 50px;
-    margin: 1.5rem; 
+    margin: 0.5rem;
+    margin-left: 1.5rem; margin-right: 1.5rem; 
 
     background-color: black;
     border-style: solid;
@@ -95,7 +95,7 @@
 
 .bottom .left .profile { height: 75px; width: 75px; }
 
-.bottom .right { justify-content: space-between; }
+.bottom .right { justify-content: space-between; margin-right: 1rem; }
 
 .bottom .right div {
     background-color: lightblue;
