@@ -26,6 +26,7 @@
     grid-column: 2;
 }
 
+/*SIDEBAR*/
 /*remove list gap and bullet properties*/
 .sidebar li { list-style-type: none; }
 .sidebar ul { margin: 0; padding: 0; }
@@ -41,4 +42,60 @@
 .sidebar ul {
     display: grid;
     gap: 20px;
+}
+
+/*HEADER*/
+.upper, .bottom { width: 100%; }
+.upper { height: 35%; }
+.bottom { height: 65%; }
+
+.upper .searchbar {
+    background-color: gray;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+
+    width: 20rem;
+    height: 2rem;
+    margin: 5%;
+    margin-left: 0;
+}
+
+.upper img.search,
+.upper img.bell { margin: 1.5%; }
+
+.upper, .bottom {
+    display: flex;
+    align-items: center;
+}
+.upper .left { flex-grow: 2; }
+.upper .right { flex-grow: 1; }
+
+.bottom .left,
+.bottom .right { flex-grow: 1; }
+
+.upper .left,
+.upper .right, 
+.bottom .left, 
+.bottom .right {
+    display: flex;
+    align-items: center;
+}
+.upper .right {
+    justify-content: flex-end;
+}
+.upper .right .profile,
+.bottom .left .profile {
+    height: 50px; width: 50px;
+    margin: 1.5rem; 
+
+    background-color: black;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+.bottom .left .profile { height: 75px; width: 75px; }
+
+.bottom .right {
+    justify-content: space-between;
 }
