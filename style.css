@@ -98,4 +98,13 @@
 
 .bottom .right {
     justify-content: space-between;
+    padding: 3rem;
+}
+
+.bottom .right div {
+    background-color: lightblue;
+    padding: 2rem;
+    padding-top: 1rem; padding-bottom: 1rem;
+
+    border-radius: 2rem;
 }
